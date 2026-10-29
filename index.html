@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tarix va mumtoz adabiyot — interaktiv darslar</title>
+<meta name="description" content="Tarix va mumtoz adabiyot fanlari bo‘yicha interaktiv darslar: Amir Temur, Mirzo Ulug‘bek, Alisher Navoiy, Bobur. Testlar, video va resurslar.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#fff;--tx:#17202a;--mu:#475569;--ac:#1d4ed8;--ac2:#eaf0ff;--bd:#cbd5e1;--ok:#14532d;--okb:#dcfce7;--no:#7f1d1d;--nob:#fee2e2;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f172a;--tx:#f1f5f9;--mu:#cbd5e1;--ac:#93c5fd;--ac2:#1e293b;--bd:#475569;--ok:#bbf7d0;--okb:#14532d;--no:#fecaca;--nob:#7f1d1d}}
+:root[data-theme="dark"]{--bg:#0f172a;--tx:#f1f5f9;--mu:#cbd5e1;--ac:#93c5fd;--ac2:#1e293b;--bd:#475569;--ok:#bbf7d0;--okb:#14532d;--no:#fecaca;--nob:#7f1d1d}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--tx);font:18px/1.65 system-ui,"Segoe UI",Roboto,Arial,sans-serif}
+main,footer{max-width:760px;margin:0 auto;padding:0 16px}
+main:focus{outline:none}
+header{border-bottom:1px solid var(--bd);padding:10px 16px}
+.w{max-width:760px;margin:0 auto}
+.logo{font-weight:700;font-size:1.15rem;color:var(--tx);text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+nav a{padding:6px 12px;border:1px solid var(--bd);border-radius:20px;color:var(--tx);text-decoration:none;font-size:.95rem}
+nav a[aria-current]{background:var(--ac);color:var(--bg);border-color:var(--ac)}
+a{color:var(--ac)}
+h1{font-size:1.7rem;line-height:1.25;margin:1rem 0 .5rem}
+h2{font-size:1.25rem;margin:1.6rem 0 .4rem}
+.bc{font-size:.9rem;color:var(--mu);margin:1rem 0 0}
+.card,.box,.q{display:block;border:1px solid var(--bd);border-radius:10px;padding:12px 14px;margin:10px 0}
+.card{color:var(--tx);text-decoration:none}
+.card b{display:block;color:var(--ac)}
+.card small,.card span{display:block;color:var(--mu);font-size:.95rem}
+.box{background:var(--ac2)}
+.btn,.f,.opt{font:inherit;cursor:pointer;border-radius:8px;border:2px solid var(--ac);padding:8px 14px;background:var(--bg);color:var(--tx)}
+.btn{background:var(--ac);color:var(--bg);text-decoration:none;display:inline-block;margin:4px 6px 4px 0}
+.f[aria-pressed=true]{background:var(--ac);color:var(--bg)}
+.opt{display:block;width:100%;text-align:left;margin:6px 0}
+.opt:disabled{opacity:1;cursor:default;color:var(--tx)}
+.opt.ok{background:var(--okb);color:var(--ok);border-color:var(--ok)}
+.opt.no{background:var(--nob);color:var(--no);border-color:var(--no)}
+.fb{margin:6px 0 0;font-size:.95rem}
+.sc{overflow-x:auto}
+table{border-collapse:collapse;width:100%}
+th,td{border:1px solid var(--bd);padding:6px 10px;text-align:left}
+th{background:var(--ac2)}
+figure{margin:14px 0}
+svg{width:100%;height:auto;max-width:100%}
+figcaption{font-size:.9rem;color:var(--mu)}
+.sf{fill:var(--ac)}.st{fill:var(--tx)}.sb{fill:var(--bg)}.ss{stroke:var(--ac)}
+input{font:inherit;padding:8px;border:2px solid var(--bd);border-radius:8px;width:100%;margin:8px 0;background:var(--bg);color:var(--tx)}
+.nv{display:flex;justify-content:space-between;gap:10px;margin:18px 0;flex-wrap:wrap}
+.pb{height:10px;background:var(--ac2);border-radius:5px;border:1px solid var(--bd)}
+.pb i{display:block;height:100%;background:var(--ac);border-radius:5px}
+footer{border-top:1px solid var(--bd);margin-top:2rem;padding-top:14px;padding-bottom:14px;font-size:.9rem;color:var(--mu)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+</style>
+</head>
+<body>
+<header><div class="w"><a class="logo" href="#bosh">📜 Tarix va adabiyot</a>
+<nav aria-label="Asosiy menyu"><a href="#bosh" data-p="bosh">Bosh sahifa</a><a href="#darslar" data-p="darslar">Darslar</a><a href="#video" data-p="video">Video</a><a href="#test" data-p="test">Test</a><a href="#resurslar" data-p="resurslar">Resurslar</a><a href="#haqida" data-p="haqida">Sayt haqida</a></nav></div></header>
+<main id="app" tabindex="-1"></main>
+<footer>Oxirgi yangilanish: 29.10.2026. Sayt shaxsiy maʼlumot yigʻmaydi.</footer>
+<script>
+const XM=["Hayrat ul-abror","Farhod va Shirin","Layli va Majnun","Sab’ai sayyor","Saddi Iskandariy"];
+const TL=`<svg role="img" aria-label="Vaqt chizigʻi: Amir Temur 1336, Mirzo Ulugʻbek 1394, Alisher Navoiy 1441, Bobur 1483-yilda tugʻilgan" viewBox="0 0 440 120"><line x1="30" y1="40" x2="410" y2="40" class="ss" stroke-width="3"/><g text-anchor="middle" font-size="15" class="st"><circle cx="55" cy="40" r="9" class="sf"/><text x="55" y="75" font-weight="700">1336</text><text x="55" y="97">Temur</text><circle cx="165" cy="40" r="9" class="sf"/><text x="165" y="75" font-weight="700">1394</text><text x="165" y="97">Ulugʻbek</text><circle cx="275" cy="40" r="9" class="sf"/><text x="275" y="75" font-weight="700">1441</text><text x="275" y="97">Navoiy</text><circle cx="385" cy="40" r="9" class="sf"/><text x="385" y="75" font-weight="700">1483</text><text x="385" y="97">Bobur</text></g></svg>`;
+const UB=`<svg role="img" aria-label="Infografika: Ulugʻbek jadvalida 1018 ta yulduzning oʻrni berilgan; yil uzunligi 365 kun 6 soat 10 daqiqa atrofida" viewBox="0 0 440 130"><circle cx="70" cy="65" r="52" class="sf"/><text x="70" y="73" text-anchor="middle" font-size="30" font-weight="700" class="sb">1018</text><text x="70" y="96" text-anchor="middle" font-size="14" class="sb">yulduz</text><g font-size="16" class="st"><text x="140" y="42" font-weight="700">Ziji jadidi Koʻragoniy</text><text x="140" y="68">jadvalida 1018 ta yulduz</text><text x="140" y="94">Yil uzunligi: 365 kun 6 soat</text><text x="140" y="114">10 daqiqa atrofida</text></g></svg>`;
+const NV=`<svg role="img" aria-label="Infografika: «Xamsa» besh dostondan iborat: ${XM.join(", ")}" viewBox="0 0 440 200"><text x="10" y="24" font-size="17" font-weight="700" class="st">«Xamsa» (1483–1485) — besh doston</text>${XM.map((x,i)=>`<circle cx="26" cy="${52+i*32}" r="12" class="sf"/><text x="26" y="${58+i*32}" text-anchor="middle" font-size="14" class="sb">${i+1}</text><text x="48" y="${58+i*32}" font-size="16" class="st">${x}</text>`).join("")}</svg>`;
+const L=[
+{id:"temur",g:"Tarix",t:"Amir Temur va Temuriylar davlati",s:"Amir_Temur",
+goal:["Amir Temurning hayot yillari va davlati poytaxtini ayta olasiz.","Temurning davlat boshqaruvi va meʼmorchilikdagi izlarini tushuntira olasiz."],
+p:["Amir Temur 1336-yilda Kesh (hozirgi Shahrisabz) hududida tugʻilgan. 1370-yilda Movarounnahrda hokimiyatni qoʻlga olib, Samarqandni poytaxt qilgan davlatga asos soldi.","Uning yurishlari Eron, Kavkaz, Hindiston va Kichik Osiyogacha yetib bordi. 1402-yilda Anqara jangida Usmonli sultoni Boyazid I magʻlub etildi.","«Temur tuzuklari» asarida davlat boshqaruvi qoidalari bayon etilgan, unda adolat va qonunga katta eʼtibor berilgan. «Kuch — adolatda» shiori ham unga nisbat beriladi. Samarqandda Gʻuri Amir, Shahrisabzda Oqsaroy kabi meʼmoriy yodgorliklar qurilgan."],
+d:[["1336","Kesh hududida tugʻilgan"],["1370","Davlatga asos solindi, Samarqand poytaxt boʻldi"],["1402","Anqara jangi"],["1405","Otrorda vafot etdi"]],
+q:[["Amir Temur davlatining poytaxti qaysi shahar boʻlgan?",["Buxoro","Samarqand","Hirot","Toshkent"],1,"Samarqand 1370-yildan Temur davlatining poytaxti boʻlgan."],
+["1402-yilda Anqara jangida Amir Temur kimni magʻlub etgan?",["Boyazid I ni (Usmonli sultoni)","Husayn Boyqaroni","Ibrohim Lodiyni","Mirzo Ulugʻbekni"],0,"Anqara jangida (1402) Usmonli sultoni Boyazid I magʻlub etilgan."]]},
+{id:"ulugbek",g:"Tarix",t:"Mirzo Ulugʻbek — hukmdor va olim",s:"Mirzo_Ulug%CA%BBbek",img:UB,cap:"Infografika: Ulugʻbek yulduzlar jadvali",
+goal:["Mirzo Ulugʻbekning ilm-fan taraqqiyotiga qoʻshgan hissasini sanab bera olasiz.","«Ziji jadidi Koʻragoniy» asarining ahamiyatini tushuntira olasiz."],
+p:["Mirzo Ulugʻbek (1394–1449) Amir Temurning nabirasi. U 1409-yildan Samarqandni boshqardi, 1447-yilda sulton boʻldi, shu bilan birga davrining yirik olimi edi.","Samarqandda madrasa (1417–1420) qurdirdi, bu yerda taniqli olimlar dars bergan. 1420-yillar oxirida esa rasadxona qurdirdi — u davrning eng yirik ilmiy markazlaridan biri edi.","Rasadxonadagi kuzatishlar asosida «Ziji jadidi Koʻragoniy» yulduzlar jadvali yaratildi: unda 1018 ta yulduzning oʻrni berilgan. Ulugʻbek yil uzunligini bugungi qiymatdan bir daqiqadan kam farq bilan aniqlagan. 1449-yilda fitna natijasida halok boʻldi."],
+d:[["1394","Tugʻilgan"],["1417–1420","Samarqand madrasasi qurildi"],["1420-yillar oxiri","Rasadxona qurildi"],["1447","Sulton boʻldi"],["1449","Halok boʻldi"]],
+q:[["Mirzo Ulugʻbek yulduzlarni kuzatish uchun Samarqandda nima qurdirgan?",["Rasadxona","Karvonsaroy","Qal’a","Bozor"],0,"Ulugʻbek rasadxonasi 1420-yillar oxirida qurilgan."],
+["«Ziji jadidi Koʻragoniy» jadvalida nechta yulduzning oʻrni berilgan?",["365","12","1018","5000"],2,"Jadvalda 1018 ta yulduzning joylashuvi berilgan."]]},
+{id:"navoiy",g:"Adabiyot",t:"Alisher Navoiy va «Xamsa»",s:"Alisher_Navoiy",img:NV,cap:"Infografika: «Xamsa» tarkibi",
+goal:["Alisher Navoiyning hayoti va asosiy asarlarini ayta olasiz.","«Xamsa»ning besh dostonini sanab bera olasiz."],
+p:["Nizomiddin Alisher Navoiy (1441–1501) Hirotda tugʻilgan va vafot etgan. U oʻzbek adabiy tilining asoschisi hisoblanadi: ijodini asosan turkiy (eski oʻzbek) tilida yaratgan. Navoiy shoir, mutafakkir va davlat arbobi edi.","Eng mashhur asari — «Xamsa» (1483–1485). U besh dostondan iborat: «Hayrat ul-abror», «Farhod va Shirin», «Layli va Majnun», «Sab’ai sayyor», «Saddi Iskandariy».","Gʻazallari «Xazoyin ul-maoniy» devoniga jamlangan. «Muhokamat ul-lugʻatayn» asarida turkiy tilning boyligini fors tili bilan solishtirib asoslagan."],
+d:[["1441","Hirotda tugʻilgan"],["1483–1485","«Xamsa» yozildi"],["1499","«Muhokamat ul-lugʻatayn» yozildi"],["1501","Hirotda vafot etgan"]],
+q:[["«Xamsa» nechta dostondan iborat?",["3 ta","5 ta","7 ta","9 ta"],1,"«Xamsa» — «beshlik» degani: asar besh dostondan iborat."],
+["Quyidagilardan qaysi biri «Xamsa» tarkibiga kiradi?",["Boburnoma","Layli va Majnun","Temur tuzuklari","Ziji jadidi Koʻragoniy"],1,"«Layli va Majnun» — «Xamsa»dagi dostonlardan biri."]]},
+{id:"bobur",g:"Adabiyot",t:"Zahiriddin Muhammad Bobur",s:"Zahiriddin_Muhammad_Bobur",
+goal:["Boburning hayot yoʻlini va davlat arbobi sifatidagi faoliyatini bayon qila olasiz.","«Boburnoma»ning tarixiy va adabiy ahamiyatini izohlay olasiz."],
+p:["Zahiriddin Muhammad Bobur (1483–1530) Andijonda tugʻilgan, Amir Temurning avlodi. 1494-yilda yoshligida Fargʻona taxtiga oʻtirdi.","Samarqandni egallash uchun urinishlari muvaffaqiyatsiz boʻlgach, 1504-yilda Kobulni oldi. 1526-yilda Panipat jangida Dehli sultoni Ibrohim Lodiyni magʻlub etib, Hindistonda Boburiylar davlatiga asos soldi.","Bobur — iste’dodli shoir: gʻazal va ruboiylar yozgan. «Boburnoma» asarida oʻz hayoti, Movarounnahr, Afgʻoniston va Hindiston tabiati, xalqlari haqida qiziqarli maʼlumotlar bergan. Asar turkiy tilda yozilgan."],
+d:[["1483","Andijonda tugʻilgan"],["1504","Kobulni egalladi"],["1526","Panipat jangi, Boburiylar davlatiga asos soldi"],["1530","Agrada vafot etgan"]],
+q:[["Zahiriddin Muhammad Bobur qaysi shaharda tugʻilgan?",["Andijon","Samarqand","Hirot","Kobul"],0,"Bobur 1483-yilda Andijonda tugʻilgan."],
+["Boburning hayoti va xotiralari bayon etilgan asari qaysi?",["Xamsa","Boburnoma","Temur tuzuklari","Layli va Majnun"],1,"«Boburnoma» — Boburning xotiralari va tarixiy-geografik maʼlumotlarga boy asari."]]}
+];
+const W="https://uz.wikipedia.org/wiki/";
+const V=[
+{l:"temur",t:"Amir Temur: davlat va meʼmorchilik",u:"",n:"Koʻrgach oʻylang: Temur davlatini boshqarishda qaysi tamoyil muhim boʻlgan?"},
+{l:"ulugbek",t:"Mirzo Ulugʻbek va Samarqand rasadxonasi",u:"",n:"Koʻrgach oʻylang: rasadxona nega davrning yirik ilmiy markazi hisoblangan?"},
+{l:"navoiy",t:"Alisher Navoiy: «Xamsa» dostonlari",u:"",n:"Koʻrgach oʻylang: besh dostondan qaysi biri sizga yoqdi va nega?"},
+{l:"bobur",t:"Bobur va «Boburnoma»",u:"",n:"Koʻrgach oʻylang: «Boburnoma» tarixchi uchun nega qimmatli manba?"}
+];
+const $=s=>document.querySelector(s);
+const app=$("#app");
+let cur=[],score=0,ans=0,F="Hammasi",done=[];
+try{done=JSON.parse(localStorage.getItem("done")||"[]")}catch(e){}
+function save(){try{localStorage.setItem("done",JSON.stringify(done))}catch(e){}}
+function Q(q){cur.push(q);const n=cur.length;return `<div class="q" data-n="${n-1}"><b>${n}. ${q[0]}</b>${q[1].map((o,i)=>`<button class="opt" data-i="${i}">${o}</button>`).join("")}<p class="fb" role="status"></p></div>`}
+function list(){
+const s=$("#s").value.toLowerCase();
+$("#list").innerHTML=L.filter(l=>(F==="Hammasi"||l.g===F)&&l.t.toLowerCase().includes(s)).map(l=>`<a class="card" href="#${l.id}"><small>${l.g}</small><b>${l.t}</b><span>${done.includes(l.id)?"✓ Tugatilgan":l.goal[0]}</span></a>`).join("")||"<p>Dars topilmadi.</p>";
+document.querySelectorAll(".f").forEach(b=>b.setAttribute("aria-pressed",b.textContent===F));
+$("#pr").textContent=`Tugatilgan darslar: ${done.length}/${L.length}`;
+$("#pi").style.width=done.length/L.length*100+"%";
+}
+function lessonPage(l){
+const i=L.indexOf(l),pv=L[i-1],nx=L[i+1];
+return [l.t,`<p class="bc"><a href="#darslar">Darslar</a> › ${l.g} › ${l.t}</p>
+<h1>${l.t}</h1>
+<div class="box"><b>Oʻquv maqsadi.</b> Bu darsdan soʻng siz:<ul>${l.goal.map(g=>`<li>${g}</li>`).join("")}</ul></div>
+${l.img?`<figure>${l.img}<figcaption>${l.cap}</figcaption></figure>`:""}
+${l.p.map(x=>`<p>${x}</p>`).join("")}
+<h2>Muhim sanalar</h2><div class="sc"><table><tr><th>Yil</th><th>Voqea</th></tr>${l.d.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join("")}</table></div>
+<h2>Tez tekshiruv</h2>${l.q.map(Q).join("")}
+<p><button class="btn" id="done"></button></p>
+<p>Manba: <a href="${W}${l.s}" target="_blank" rel="noopener">Vikipediya (oʻzbek tili)</a></p>
+<div class="nv">${pv?`<a href="#${pv.id}">← ${pv.t}</a>`:"<span></span>"}${nx?`<a href="#${nx.id}">${nx.t} →</a>`:`<a href="#test">Umumiy testga oʻtish →</a>`}</div>`]}
+function doneBtn(l){const b=$("#done"),on=done.includes(l.id);b.textContent=on?"✓ Dars tugatilgan":"Darsni tugatdim";b.setAttribute("aria-pressed",on)}
+const P={
+bosh:()=>["Bosh sahifa",`<h1>Tarix va mumtoz adabiyot: interaktiv darslar</h1>
+<p>Amir Temur, Mirzo Ulugʻbek, Alisher Navoiy va Zahiriddin Muhammad Bobur haqida qisqa darslar. Har bir darsda oʻquv maqsadi, muhim sanalar va tez tekshiruv savollari bor.</p>
+<p><b>Kimlar uchun:</b> 9–11-sinf oʻquvchilari.</p>
+<a class="btn" href="#darslar">Darslarni boshlash</a><a class="btn" href="#test">Testni yechish</a>
+<figure>${TL}<figcaption>Vaqt chizigʻi: toʻrt shaxsning tugʻilgan yillari</figcaption></figure>
+<h2>Qanday oʻrganiladi?</h2><ol><li>Darsni oʻqing.</li><li>Tez tekshiruv savollariga javob bering.</li><li>Umumiy testda bilimingizni sinang.</li></ol>`],
+darslar:()=>["Darslar",`<h1>Darslar</h1><p id="pr"></p><div class="pb"><i id="pi"></i></div>
+<input id="s" type="search" placeholder="Dars nomi boʻyicha qidirish" aria-label="Dars qidirish">
+<div>${["Hammasi","Tarix","Adabiyot"].map(x=>`<button class="f">${x}</button>`).join(" ")}</div><div id="list"></div>`],
+video:()=>["Videodarslar",`<h1>Videodarslar</h1><p>Darsni oʻqishdan oldin yoki keyin qisqa videoni koʻring, soʻng tegishli darsdagi tez tekshiruvni bajaring.</p>${V.map(v=>{const l=L.find(x=>x.id===v.l);return `<div class="card"><small>${l.g}</small><b>${v.t}</b><span>${v.n}</span><p>${v.u?`<a class="btn" href="${v.u}" target="_blank" rel="noopener">Videoni ochish</a> `:"Video tez orada qoʻshiladi. "}<a href="#${l.id}">Darsga oʻtish</a></p></div>`}).join("")}`],
+test:()=>{const all=L.flatMap(l=>l.q);return ["Test",`<h1>Umumiy test</h1><p>${all.length} ta savol. Javob tanlang — natija va izoh darhol chiqadi.</p><p id="sc" role="status">Javob berildi: 0/${all.length} · Toʻgʻri: 0</p>${all.map(Q).join("")}<div id="res" class="box" hidden></div>`]},
+resurslar:()=>["Resurslar",`<h1>Foydali havolalar</h1><p>Havolalar yangi oynada ochiladi.</p><ul>${[["Amir Temur","Amir_Temur"],["Mirzo Ulugʻbek","Mirzo_Ulug%CA%BBbek"],["Alisher Navoiy","Alisher_Navoiy"],["Zahiriddin Muhammad Bobur","Zahiriddin_Muhammad_Bobur"],["Boburnoma","Boburnoma"]].map(r=>`<li><a href="${W}${r[1]}" target="_blank" rel="noopener">${r[0]} — Vikipediya</a></li>`).join("")}</ul>`],
+haqida:()=>["Sayt haqida",`<h1>Sayt haqida</h1>
+<p><b>Maqsad:</b> tarix va mumtoz adabiyot mavzularini oddiy va interaktiv shaklda oʻrganish.</p>
+<p><b>Auditoriya:</b> 9–11-sinf oʻquvchilari va mustaqil oʻrganuvchilar.</p>
+<p><b>Yaratilgan vosita:</b> Claude (Anthropic) sunʼiy intellekt yordamchisi — reja asosida kod va matnni tez tayyorlagani hamda tahrirlarni suhbat orqali kiritish imkonini bergani uchun tanlangan.</p>
+<p><b>Manbalar:</b> oʻzbek Vikipediyasi maqolalari. Maʼlumotlarni darslik va ensiklopediyalar bilan solishtirib tekshirish kerak.</p>
+<p><b>Maxfiylik:</b> sayt shaxsiy maʼlumot yigʻmaydi; faqat dars tugatilgani brauzeringizda saqlanadi.</p>
+<p><b>Muallif:</b> Abdusami Abdubasirzoda</p>
+<p><b>Aloqa:</b> <a href="mailto:rahimovabdusami860@gmail.com">rahimovabdusami860@gmail.com</a></p>`]};
+function route(){
+let h=location.hash.slice(1);const l=L.find(x=>x.id===h);
+if(!l&&!P[h])h="bosh";
+cur=[];score=ans=0;F="Hammasi";
+const r=l?lessonPage(l):P[h]();
+app.innerHTML=r[1];
+document.title=r[0]+" — Tarix va adabiyot";
+document.querySelectorAll("nav a").forEach(a=>{if(a.dataset.p===(l?"darslar":h))a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
+if(h==="darslar")list();
+if(l)doneBtn(l);
+scrollTo(0,0);
+}
+app.addEventListener("click",e=>{
+const b=e.target.closest(".opt"),f=e.target.closest(".f"),id=e.target.id;
+if(b){
+const bx=b.closest(".q");if(bx.dataset.d)return;bx.dataset.d=1;
+const q=cur[bx.dataset.n],ok=+b.dataset.i===q[2];
+bx.querySelectorAll(".opt").forEach((x,i)=>{x.disabled=true;if(i===q[2])x.classList.add("ok");else if(x===b)x.classList.add("no")});
+bx.querySelector(".fb").textContent=(ok?"✔ Toʻgʻri! ":"✘ Notoʻgʻri. ")+q[3];
+const sc=$("#sc");
+if(sc){ans++;if(ok)score++;sc.textContent=`Javob berildi: ${ans}/${cur.length} · Toʻgʻri: ${score}`;
+if(ans===cur.length){const p=score/cur.length,r=$("#res");
+r.hidden=false;
+r.innerHTML=`<b>Natija: ${score}/${cur.length}</b><br>${p>=.75?"Ajoyib! Mavzularni yaxshi oʻzlashtirgansiz.":p>=.5?"Yaxshi. Xato savollar izohini oʻqib, tegishli darsni qayta koʻrib chiqing.":"Darslarni yana bir bor oʻqib chiqing va testni qayta yeching."}<br><button class="btn" id="re">Qayta yechish</button> <a href="#darslar">Darslarga qaytish</a>`}}
+}else if(f){F=f.textContent;list()}
+else if(id==="re")route();
+else if(id==="done"){const l=L.find(x=>x.id===location.hash.slice(1));const i=done.indexOf(l.id);if(i<0)done.push(l.id);else done.splice(i,1);save();doneBtn(l)}
+});
+app.addEventListener("input",e=>{if(e.target.id==="s")list()});
+addEventListener("hashchange",route);
+route();
+</script>
+</body>
+</html>
